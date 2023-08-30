@@ -1,0 +1,135 @@
+.navbar{
+    background-color: rgb(4, 23, 36);
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: rgb(227, 46, 46) !important;
+    text-decoration: underline;
+}
+
+.lupa i{
+    color: white;
+}
+
+.jumbotron{
+    background-color: #ceecef;
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron h1 a{
+    color: black;
+    text-shadow: 0 0 5px rgb(232, 139, 17), 0 0 5px rgb(232, 139, 17);
+    text-decoration: none;
+}
+
+.jumbotron a:hover{
+    color: #fb0c06;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    text-decoration: underline;
+    filter: brightness(1.5);
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+h2{
+    background-color: rgb(36, 63, 97);
+    color: rgb(232, 139, 17);
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+p{
+    color: rgb(232, 139, 17);
+}
+
+.img-fluid{
+    padding: 20px;
+}
+
+section{
+    background-color: rgb(36, 63, 97);
+}
+
+.original-price{
+    text-decoration: line-through !important;
+}
+
+.carousel{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 400px !important;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #e7edea;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 0%;
+}
+
+footer img{
+    margin-right: 30px;
+    text-align: center;
+    margin-top: auto;
+    color: white;
+}
+
+.social-link:hover img{
+    transform: scale(1.1);
+}
+
+.footer p{
+    color: black;
+    padding: 30px;
+    margin: 0%;
+}
+
+@media only screen and (min-width: 0) and (max-width:576px){
+    .navbar-collapse{
+        background-color: rgb(4, 23, 36);
+        display: flex;
+        justify-content: right;
+    }
+    section{
+        background-color: rgb(36, 63, 97);
+    }
+    .carousel{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 400px !important;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0 !important;
+    }
+    .carousel-item img{
+        max-height: 200px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next{
+    top: -50%;
+    }
+    .footer{
+        margin-top: 0 !important;
+    }
+}
