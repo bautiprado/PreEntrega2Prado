@@ -126,14 +126,14 @@ footer img{
         max-width: 100%;
         margin: 0;
         padding: 0;
-        height: 160px !important;
+        height: 180px !important;
         display: flex;
         background-size: cover;
         background-position: center;
         margin-bottom: 0 !important;
     }
     .carousel-item img{
-        max-height: 160px;
+        max-height: 180px;
     }
     .footer{
         margin-top: 0 !important;
