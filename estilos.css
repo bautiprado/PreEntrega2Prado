@@ -119,6 +119,13 @@ footer img{
         display: flex;
         justify-content: right;
     }
+    .jumbotron a:hover{
+        color: #fb0c06;
+        text-shadow: 0 0 5px black, 0 0 5px black;
+        text-decoration: underline;
+        filter: brightness(1.5);
+        transition: color 0.2s, border-bottom 0.2s;
+    }
     section{
         background-color: rgb(36, 63, 97);
     }
@@ -126,14 +133,14 @@ footer img{
         max-width: 100%;
         margin: 0;
         padding: 0;
-        height: 150px !important;
+        height: 110px !important;
         display: flex;
         background-size: cover;
         background-position: center;
         margin-bottom: 0 !important;
     }
     .carousel-item img{
-        max-height: 150px;
+        max-height: 110px;
     }
     .footer{
         margin-top: 0 !important;
