@@ -1,17 +1,171 @@
-/* Error: expected "{".
- *     ,
- * 182 | <<<<<<< HEAD
- *     |             ^
- *     '
- *   estilos.scss 182:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 182 \2502  <<<<<<< HEAD\a     \2502              ^\a     \2575 \a   estilos.scss 182:13  root stylesheet';
+#logo {
+  transform: rotateX(0deg);
+  transition: 3.5s;
 }
+
+#logo:hover {
+  transform: rotateX(360deg);
+}
+
+.navbar {
+  background-color: rgb(4, 23, 36);
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(227, 46, 46) !important;
+  text-decoration: underline;
+}
+
+.lupa i {
+  color: white;
+}
+
+.jumbotron {
+  background-color: #ceecef;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  z-index: -1;
+}
+
+.jumbotron h1 a {
+  color: black;
+  text-shadow: 0 0 5px rgb(232, 139, 17), 0 0 5px rgb(232, 139, 17);
+  text-decoration: none;
+}
+
+.jumbotron a:hover {
+  color: #dd110e;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+  text-decoration: underline;
+  filter: brightness(1.5);
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+h2 {
+  background-image: linear-gradient(to top, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
+  color: rgb(232, 139, 17);
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.banner {
+  background-image: linear-gradient(to top, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
+  color: rgb(232, 139, 17);
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.img-fluid {
+  padding: 20px;
+}
+
+section {
+  background-image: linear-gradient(to bottom, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
+}
+
+.original-price {
+  text-decoration: line-through !important;
+}
+
+.carousel {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 400px !important;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #e7edea;
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  padding-top: 25px;
+  padding-bottom: 0%;
+}
+
+footer img {
+  margin-right: 30px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.social-link:hover img {
+  transform: scale(1.1);
+}
+
+.footer p {
+  color: black;
+  padding: 30px;
+  margin: 0%;
+}
+
+@media only screen and (min-width: 0) and (max-width: 576px) {
+  .navbar-collapse {
+    background-color: rgb(4, 23, 36);
+    display: flex;
+    justify-content: right;
+  }
+  section {
+    background-color: rgb(36, 63, 97);
+  }
+  .carousel {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 165px !important;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0 !important;
+  }
+  .carousel-item img {
+    max-height: 165px;
+  }
+  .carousel-indicators {
+    bottom: -20px;
+  }
+  .footer {
+    margin-top: 0 !important;
+    padding: 1px 0;
+  }
+  footer img {
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
