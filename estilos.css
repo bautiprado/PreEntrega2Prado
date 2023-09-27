@@ -107,6 +107,10 @@ section {
   margin: 0 auto;
 }
 
+.carousel-item.chicharito-carousel img {
+  object-fit: cover;
+}
+
 footer {
   background-color: #e7edea;
   text-align: center;
