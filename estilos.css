@@ -64,6 +64,15 @@ h2 {
   text-decoration: underline;
 }
 
+.banner {
+  background-image: linear-gradient(to top, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
+  color: rgb(232, 139, 17);
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 0;
+  text-decoration: underline;
+}
+
 p {
   color: white;
   text-align: center;
@@ -96,6 +105,10 @@ section {
   height: auto;
   max-height: 400px;
   margin: 0 auto;
+}
+
+.img-fluid {
+  object-fit: cover;
 }
 
 footer {

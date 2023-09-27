@@ -19,13 +19,11 @@ $color4: rgb(4, 23, 36);
 
 .nav-link{
     color: $color;
-    // transition: transform 0.3s ease;
 }
 
 .nav-link:hover{
     color: rgb(227, 46, 46)!important;
     text-decoration: underline;
-    // transform: scale(1.1);
 }
 
 .lupa i{
@@ -61,10 +59,18 @@ $color4: rgb(4, 23, 36);
     text-decoration: underline;
     filter: brightness(1.5);
     transition: color 0.2s, border-bottom 0.2s;
-
 }
 
 h2{
+    background-image: linear-gradient(to top, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
+    color: $color3;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.banner{
     background-image: linear-gradient(to top, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
     color: $color3;
     text-transform: uppercase;
@@ -105,6 +111,10 @@ section{
     height: auto;
     max-height: 400px;
     margin: 0 auto;
+}
+
+.img-fluid{
+    object-fit: cover;
 }
 
 footer{
