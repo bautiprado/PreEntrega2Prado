@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background-color: rgb(4, 23, 36);
+  background-image: linear-gradient(to right top, #000000, #0c070a, #120e14, #15141b, #151a23, #141d27, #12202b, #0f232e, #0d232f, #0b2430, #082432, #062433);
 }
 
 .nav-link {
@@ -28,6 +28,7 @@
   background-color: #ceecef;
   display: flex;
   justify-content: center;
+  font-family: "Prompt", sans-serif;
 }
 
 .jumbotron::before {
@@ -48,8 +49,8 @@
 }
 
 .jumbotron a:hover {
-  color: #dd110e;
-  text-shadow: 0 0 5px black, 0 0 5px black;
+  color: #abdecb;
+  text-shadow: 0 0 5px #9c1515, 0 0 5px #9c1515;
   text-decoration: underline;
   filter: brightness(1.5);
   transition: color 0.2s, border-bottom 0.2s;
@@ -62,6 +63,10 @@ h2 {
   padding: 20px;
   margin: 0;
   text-decoration: underline;
+}
+
+.card-body {
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .banner {
@@ -107,8 +112,8 @@ section {
   margin: 0 auto;
 }
 
-.carousel-item.chicharito-carousel img {
-  object-fit: cover;
+.carousel-indicators {
+  bottom: -15px;
 }
 
 footer {
@@ -124,6 +129,7 @@ footer img {
   margin-right: 30px;
   text-align: center;
   margin-top: auto;
+  transition: transform 0.3s;
 }
 
 .social-link:hover img {

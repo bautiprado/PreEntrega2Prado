@@ -2,7 +2,7 @@ $color: white;
 $color1: black;
 $color2: rgb(36, 63, 97);
 $color3: rgb(232, 139, 17);
-$color4: rgb(4, 23, 36);
+$color4: rgb(4, 23, 36); //color de .navbar
 
 #logo {
     transform: rotateX(0deg);
@@ -14,7 +14,7 @@ $color4: rgb(4, 23, 36);
 }
 
 .navbar{
-    background-color: $color4;
+    background-image: linear-gradient(to right top, #000000, #0c070a, #120e14, #15141b, #151a23, #141d27, #12202b, #0f232e, #0d232f, #0b2430, #082432, #062433);
 }
 
 .nav-link{
@@ -34,6 +34,7 @@ $color4: rgb(4, 23, 36);
     background-color: #ceecef;
     display: flex;
     justify-content: center;
+    font-family: 'Prompt', sans-serif;
 }
 
 .jumbotron::before {
@@ -54,8 +55,8 @@ $color4: rgb(4, 23, 36);
 }
 
 .jumbotron a:hover{
-    color: #dd110e;
-    text-shadow: 0 0 5px $color1, 0 0 5px $color1;
+    color: #abdecb;
+    text-shadow: 0 0 5px #9c1515, 0 0 5px #9c1515;
     text-decoration: underline;
     filter: brightness(1.5);
     transition: color 0.2s, border-bottom 0.2s;
@@ -68,6 +69,11 @@ h2{
     padding: 20px;
     margin: 0;
     text-decoration: underline;
+}
+
+.card-body{
+    //background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
 }
 
 .banner{
@@ -89,7 +95,7 @@ p{
 }
 
 section{
-    background-image: linear-gradient(to bottom, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
+    background-image: linear-gradient(to bottom, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69,  #004066, #024262, #0c445f);
 }
 
 .original-price{
@@ -113,8 +119,8 @@ section{
     margin: 0 auto;
 }
 
-.carousel-item.chicharito-carousel img{
-    object-fit: cover;
+.carousel-indicators {
+    bottom: -15px;
 }
 
 footer{
@@ -130,6 +136,7 @@ footer img{
     margin-right: 30px;
     text-align: center;
     margin-top: auto;
+    transition: transform 0.3s;
 }
 
 .social-link:hover img{

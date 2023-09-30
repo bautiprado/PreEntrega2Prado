@@ -14,6 +14,9 @@
     <meta name="keywords" content="camisetas de fútbol, Messi, Argentina, Mundial Qatar, Mundial 2022"/>
     <link rel="shortcut icon" href="../img/icono7.png" type="image/x-icon"/>
     <link rel="stylesheet" href="../estilos.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Playfair+Display:wght@600&family=Prompt:ital@1&family=Roboto:wght@100&display=swap');
+    </style>
 </head>
 <body>
     <!-- Navbar inicia -->
@@ -56,17 +59,27 @@
     <h2>Selecciones</h2>
         <!-- Container + Row + Col -->
         <section class="container-fluid">
-            <div class="row">
-                <!-- Breakpoint, 12 columnas -->
-                <div class="col-lg-6 col-sm-12">
-                    <img src="../camisetas/camisetamessi.jpg" alt="Camiseta Messi local campeón Mundial Qatar 2022" class="img-fluid" style="max-width: 100%;">
-                    <p>Messi local campeón Mundial Qatar 2022</p>
-                    <p>$35.000</p>
+            <div class="row justify-content-start">
+                <!-- Tarjetas -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mx-auto" style="width: 18rem; margin-bottom: 30px; height: 94%;">
+                        <img src="../camisetas/camisetamessi.jpg" alt="Camiseta Messi local campeón Mundial Qatar 2022" class="card-img-top">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">Messi local campeón Mundial Qatar 2022</h5>
+                            <p class="card-text text-dark">$35.000</p>
+                            <a href="#" class="btn btn-primary">COMPRAR</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-12">
-                    <img src="../camisetas/camisetaargtreino.jpg" alt="Camiseta Argentina Entrenamiento Tiro 23" class="img-fluid" style="max-width: 100%;">
-                    <p>Argentina Entrenamiento Tiro 23</p>
-                    <p>$20.000</p>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mx-auto" style="width: 18rem; margin-bottom: 30px; height: 94%;">
+                        <img src="../camisetas/camisetaargtreino.jpg" alt="Camiseta Argentina Entrenamiento Tiro 23" class="card-img-top">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title text-center">Argentina Entrenamiento Tiro 23</h5>
+                            <p class="card-text text-dark">$20.000</p>
+                            <a href="#" class="btn btn-primary mt-auto">COMPRAR</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -47,7 +47,7 @@
 }
 
 h2 {
-  background-color: rgb(36, 63, 97);
+  background-image: linear-gradient(to top, #091e47, #0b224e, #0c2755, #0e2b5c, #0f3063, #0a3466, #053768, #013b6b, #003e69, #004066, #024262, #0c445f);
   color: rgb(232, 139, 17);
   text-transform: uppercase;
   padding: 20px;
