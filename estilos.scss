@@ -159,6 +159,12 @@ footer img{
         display: flex;
         justify-content: right;
     }
+    .jumbotron{
+        background-color: #e4ebec;
+        display: flex;
+        justify-content: center;
+        font-family: 'Prompt', sans-serif;
+    }
     section{
         background-color: $color2;
     }
