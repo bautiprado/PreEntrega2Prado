@@ -23,23 +23,23 @@ function calcularOferta(precioInicial, descuentoPorcentaje = 20) {
     let descuento = (precioInicial * descuentoPorcentaje) / 100
     let oferta = precioInicial - descuento
     alert("El precio con un " + descuentoPorcentaje + "% de descuento es: " + oferta)
-    return oferta
+    return oferta 
 }
 
 let confirmacion = true
 
 
-let producto = (prompt("Ingrese el nombre de la camiseta que desea"))
 do {
     let precioDescuento
 
     while (true) {
+        let producto = (prompt("Ingrese el nombre de la camiseta que desea"))
         precioDescuento = parseFloat(prompt("Ingrese su precio inicial para calcular el descuento"))
 
     if (!isNaN(precioDescuento) && precioDescuento > 0) {
     let oferta = calcularOferta(precioDescuento)
 
-    let respuesta = prompt("¿Desea ingresar otro precio para calcular?")
+    let respuesta = prompt("¿Desea consultar por otra camiseta?")
 
     if (respuesta.toLowerCase() !== 'si') {
         confirmacion = false
@@ -50,6 +50,7 @@ do {
         }
     }
 } while (confirmacion)
+
 
 const indice = todosMisProductos.indexOf(producto)
 
@@ -138,3 +139,6 @@ const camiseta25 = new extra50offsale("Short Independiente", "$10.000", "7/10")
 const camisetas = [camiseta1, camiseta2, camiseta3, camiseta4, camiseta5, camiseta6, camiseta7, camiseta8, camiseta9, camiseta10, camiseta11, camiseta12, camiseta13, camiseta14, camiseta15, camiseta16, camiseta17, camiseta18, camiseta19, camiseta20, camiseta21, camiseta22, camiseta23, camiseta24, camiseta25]
 
 console.table(camisetas)
+
+camisetas.forEach(camiseta => {
+    console.log(`Título: ${camiseta.Titulo}, Precio: ${camiseta.Precio}, Estado: ${camiseta.Estado}`)})
