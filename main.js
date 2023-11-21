@@ -1,19 +1,19 @@
-const indumentarias = ["Neymar", "Independiente", "Napoli", "Sampdoria", "Independiente 2023", "Buzo NYC"]
+/*const indumentarias = ["Neymar", "Independiente", "Napoli", "Sampdoria", "Independiente 2023", "Buzo NYC"]
 const seleccioness = ["Messi", "Argentina"]
 const ofertass = ["Independiente 2020", "Independiente 2014", "Sevilla", "Campera Independiente"]
 const novedadesydestacadoss = ["Bale", "Sergio Ramos", "Real Madrid mujer", "Independiente 2018", "Billetera Real Madrid"]
 const colecciónn = ["Kun", "Independiente 2017", "Real Madrid 2014", "Buzo LAG"]
 const extra50offsalee = ["Real Madrid 2012", "Independiente 2017 blanca", "Arsenal", "Short Independiente"]
 
-const todosMisProductos = indumentarias.concat(seleccioness).concat(ofertass).concat(novedadesydestacadoss).concat(colecciónn).concat(extra50offsalee)
+const todosMisProductos = indumentarias.concat(seleccioness).concat(ofertass).concat(novedadesydestacadoss).concat(colecciónn).concat(extra50offsalee) */
 
 
 function registro() {
     alert("Bienvenido a Seven Only Fútbol, te ofrecemos camisetas únicas 🙌🏻")
     alert("¡Empecemos!")
-    let nombre = prompt("Ingrese su nombre completo para registrarse")
-    let contraseña = prompt("Cree una contraseña para registrarse")
-    alert("¡Felicidades, ya te encuentras registrado!")
+    // let nombre = prompt("Ingrese su nombre completo para registrarse")
+    // let contraseña = prompt("Cree una contraseña para registrarse")
+    // alert("¡Felicidades, ya te encuentras registrado!")
 }
 
 registro()
@@ -25,36 +25,6 @@ function calcularOferta(precioInicial, descuentoPorcentaje = 20) {
     alert("El precio con un " + descuentoPorcentaje + "% de descuento es: " + oferta)
     return oferta 
 }
-
-
-
-
-/*
-let confirmacion = true
-
-
-do {
-    let precioDescuento
-
-    while (true) {
-        let producto = (prompt("Ingrese el nombre de la camiseta que desea"))
-        precioDescuento = parseFloat(prompt("Ingrese su precio inicial para calcular el descuento"))
-
-    if (!isNaN(precioDescuento) && precioDescuento > 0) {
-    let oferta = calcularOferta(precioDescuento)
-
-    let respuesta = prompt("¿Desea consultar por otra camiseta?")
-
-    if (respuesta.toLowerCase() !== 'si') {
-        confirmacion = false
-    }
-    break
-        } else {
-            alert("Por favor, ingrese un número válido")
-        }
-    }
-} while (confirmacion) */
-
 
 
 let confirmacion = true
@@ -93,15 +63,14 @@ do {
 } while (confirmacion)
 
 
-
-const indice = todosMisProductos.indexOf(producto)
+/*const indice = todosMisProductos.indexOf(producto)
 
 if(indice != -1) {
     console.log("El producto se encuenra disponible")
     console.log(todosMisProductos[indice])
 } else {
     console.log("El producto no se encuentra disponible")
-}
+} */
 
 class indumentaria {
     constructor(Titulo, Precio, Estado) {
