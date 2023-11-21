@@ -1,19 +1,6 @@
-/*const indumentarias = ["Neymar", "Independiente", "Napoli", "Sampdoria", "Independiente 2023", "Buzo NYC"]
-const seleccioness = ["Messi", "Argentina"]
-const ofertass = ["Independiente 2020", "Independiente 2014", "Sevilla", "Campera Independiente"]
-const novedadesydestacadoss = ["Bale", "Sergio Ramos", "Real Madrid mujer", "Independiente 2018", "Billetera Real Madrid"]
-const colecciónn = ["Kun", "Independiente 2017", "Real Madrid 2014", "Buzo LAG"]
-const extra50offsalee = ["Real Madrid 2012", "Independiente 2017 blanca", "Arsenal", "Short Independiente"]
-
-const todosMisProductos = indumentarias.concat(seleccioness).concat(ofertass).concat(novedadesydestacadoss).concat(colecciónn).concat(extra50offsalee) */
-
-
 function registro() {
     alert("Bienvenido a Seven Only Fútbol, te ofrecemos camisetas únicas 🙌🏻")
     alert("¡Empecemos!")
-    // let nombre = prompt("Ingrese su nombre completo para registrarse")
-    // let contraseña = prompt("Cree una contraseña para registrarse")
-    // alert("¡Felicidades, ya te encuentras registrado!")
 }
 
 registro()
@@ -63,14 +50,6 @@ do {
 } while (confirmacion)
 
 
-/*const indice = todosMisProductos.indexOf(producto)
-
-if(indice != -1) {
-    console.log("El producto se encuenra disponible")
-    console.log(todosMisProductos[indice])
-} else {
-    console.log("El producto no se encuentra disponible")
-} */
 
 class indumentaria {
     constructor(Titulo, Precio, Estado) {
