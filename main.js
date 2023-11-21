@@ -26,6 +26,10 @@ function calcularOferta(precioInicial, descuentoPorcentaje = 20) {
     return oferta 
 }
 
+
+
+
+/*
 let confirmacion = true
 
 
@@ -49,7 +53,45 @@ do {
             alert("Por favor, ingrese un número válido")
         }
     }
+} while (confirmacion) */
+
+
+
+let confirmacion = true
+
+do {
+    let precioDescuento
+
+    while (true) {
+        let producto = prompt("Ingrese el nombre de la camiseta que desea")
+        precioDescuento = parseFloat(prompt("Ingrese su precio inicial para calcular el descuento"))
+
+        if (!isNaN(precioDescuento) && precioDescuento > 0) {
+            let oferta = calcularOferta(precioDescuento)
+
+            let respuesta = prompt("¿Desea consultar por otra camiseta?")
+
+            if (respuesta !== null) {
+                respuesta = respuesta.toLowerCase()
+                if (respuesta !== 'si' && respuesta !== 'no') {
+                    alert("Por favor, responda solo con `si` o `no`")
+                } else {
+                    if (respuesta === 'no') {
+                        confirmacion = false
+                    }
+                    break
+                }
+            } else {
+                console.log("Operación cancelada.")
+                confirmacion = false
+                break;
+            }
+        } else {
+            alert("Por favor, ingrese un número válido")
+        }
+    }
 } while (confirmacion)
+
 
 
 const indice = todosMisProductos.indexOf(producto)
