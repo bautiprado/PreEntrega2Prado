@@ -26,23 +26,29 @@ do {
         if (!isNaN(precioDescuento) && precioDescuento > 0) {
             let oferta = calcularOferta(precioDescuento)
 
-            let respuesta = prompt("¿Desea consultar por otra camiseta?")
+            let respuesta
 
-            if (respuesta !== null) {
-                respuesta = respuesta.toLowerCase()
-                if (respuesta !== 'si' && respuesta !== 'no') {
-                    alert("Por favor, responda solo con `si` o `no`")
+            do {
+                respuesta = prompt("¿Desea consultar por otra camiseta?")
+                if (respuesta === null) {
+                    console.log("Operación cancelada")
+                    confirmacion = false
+                    break
+                } else if (respuesta.toLowerCase() !== 'si' && respuesta.toLowerCase() !== 'no') {
+                    alert("Por favor, responda solo con 'si' o 'no'")
                 } else {
-                    if (respuesta === 'no') {
+                    if (respuesta.toLowerCase() === 'no') {
                         confirmacion = false
                     }
                     break
                 }
-            } else {
-                console.log("Operación cancelada.")
-                confirmacion = false
-                break;
+            } while (true)
+
+            if (!confirmacion) {
+                break
             }
+
+            break
         } else {
             alert("Por favor, ingrese un número válido")
         }
